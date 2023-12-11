@@ -14,4 +14,3 @@ document.querySelector(".column-header-1").addEventListener("click", () => {
 document.querySelector(".mobile-menu-icon").addEventListener("click", () => {
     document.querySelector(".container").classList.toggle("change");
 });
-

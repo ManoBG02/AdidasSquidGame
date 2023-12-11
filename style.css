@@ -244,15 +244,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f44786;
+    background-color: #000;
     overflow: hidden;
     padding: 5rem;
 }
 
 .guards-wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    /* Adjust as needed */
+    align-items: center;
+    /* Adjust as needed */
+    flex-wrap: wrap;
+    /* In case you want to wrap guards on smaller screens */
 }
 
 .guard {
@@ -266,6 +270,7 @@ body {
     align-items: center;
     align-content: center;
     justify-content: flex-start;
+    margin: 1rem;
 }
 
 .guard-logo {
@@ -328,7 +333,7 @@ body {
 
 .contestants {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1282,7 +1287,7 @@ body {
 
 .eliminations {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1292,9 +1297,108 @@ body {
     overflow: hidden;
     padding: 15rem 5rem 10rem 5rem;
 }
+
 #eliminations {
     background-color: black;
 }
 
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+    line-height: 4rem;
+    font-size: 2rem;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #fff;
+    text-shadow: 0.2rem 0.2rem rgb(0, 0, 0, 0.5);
+    padding-left: 2rem;
+    /* Adjust this value as needed */
+}
 
+.column-third {
+    width: 20rem;
+}
 
+.column-3 i {
+    font-size: 5rem;
+}
+
+.column-3 h4 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.column-second {
+    width: 20rem;
+}
+
+.column-2 i {
+    font-size: 5rem;
+}
+
+.column-2 h4 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.column-first {
+    width: 20rem;
+}
+
+.column-1 i {
+    font-size: 5rem;
+}
+
+.column-1 h4 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+ul li {
+    padding-left: 1rem;
+}
+
+.scroll-down-container {
+    text-align: center;
+    /* Center the text horizontally */
+    padding: 20px;
+    /* Add some padding around the text */
+    /* Add more styling as needed */
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 4rem;
+    /* Adjusted to your original font size */
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+h5 {
+    color: red; /* Set the text color to green */
+    font-size: 2rem; /* Adjust the font size as needed */
+    margin-bottom: 1rem; /* Space below the strike count */
+    font-family: 'Balsamiq Sans', cursive; /* Optional: Match the font style of the other elements */
+}
