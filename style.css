@@ -455,6 +455,14 @@ body {
     justify-content: center;
     position: relative;
 }
+.rules-wrapper {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 .rule-text {
     text-align: start;
@@ -1312,11 +1320,11 @@ ul {
     margin-inline-end: 0px;
     text-align: justify;
     line-height: 4rem;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Balsamiq Sans', cursive;
     color: #fff;
     text-shadow: 0.2rem 0.2rem rgb(0, 0, 0, 0.5);
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     /* Adjust this value as needed */
 }
 
@@ -1421,4 +1429,21 @@ h5 {
     .column-1 h4, .column-2 h4, .column-3 h4 {
         font-size: 1.5rem; /* Adjust font size */
     }
+}
+
+#play-game {
+    background-color: #0b785e;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px #000;
+    transition: background-color 0.3s;
+}
+
+#play-game.active {
+    background-color: #4b0100;
 }

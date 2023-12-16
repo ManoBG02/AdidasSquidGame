@@ -296,6 +296,18 @@
         });
     };
 
+    let playGameButton = document.getElementById('play-game');
+        let dollSong = document.getElementById('doll-song');
+
+        playGameButton.addEventListener('click', function() {
+            if (dollSong.paused) {
+                dollSong.play();
+                playGameButton.classList.add('active');
+            } else {
+                dollSong.pause();
+                playGameButton.classList.remove('active');
+            }
+        });
     /**
      * Auto load
      */
